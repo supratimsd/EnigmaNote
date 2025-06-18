@@ -24,17 +24,17 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useDebounceValue, useDebounceCallback } from "usehooks-ts";
+// import { useEffect, useState } from "react";
+// import { useDebounceValue, useDebounceCallback } from "usehooks-ts";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
-import { signUpSchema } from "@/schemas/signUpSchema";
+// import { signUpSchema } from "@/schemas/signUpSchema";
 
-import axios, { AxiosError } from "axios";
-import { ApiResponse } from "@/types/ApiResponse";
+// import axios, { AxiosError } from "axios";
+// import { ApiResponse } from "@/types/ApiResponse";
 import {
   Form,
-  FormControl,
+  // FormControl,
   FormField,
   FormItem,
   FormLabel,
@@ -42,11 +42,11 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
+// import { Loader2 } from "lucide-react";
 import { signInSchema } from "@/schemas/signInSchema";
 import { signIn } from "next-auth/react";
 
-export default function signInForm() {
+export default function SignInForm() {
   
 
   // toast("Event has been created.");

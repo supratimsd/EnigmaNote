@@ -16,13 +16,13 @@ import { Loader2, RefreshCcw } from "lucide-react"
 import MessageCard from "@/components/MessageCard"
 import { User } from "next-auth"
 
-function page() {
+export default function Page() {
   const [messages,setMessages]=useState<Message[]>([])
   const [isLoading,setIsLoading]=useState(false)
   const [isSwitchLoading,setIsSwitchLoading]=useState(false)
 
-  const handleDeleteMessage=(messgaeId:string)=>{
-    setMessages(messages.filter((message)=>message._id!==messgaeId))
+  const handleDeleteMessage=(messageId:string)=>{
+    setMessages(messages.filter((message)=>message._id!==messageId))
   }
   const {data:session}=useSession()
   const form=useForm({
@@ -280,4 +280,4 @@ function page() {
   
 }
 
-export default page
+// export default page
