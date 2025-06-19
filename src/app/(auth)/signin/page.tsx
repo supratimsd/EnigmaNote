@@ -84,66 +84,7 @@ export default function SignInForm() {
       router.replace("/dashboard");
     }
   }
-    // return (
-    //   <div className="flex justify-center items-center min-h-screen bg-gray-100">
-    //     <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
-    //       <div className="text-center">
-    //         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6 ">
-    //           Join EnigmaNote
-    //         </h1>
-    //         <p className="mb-4 ">signin to start your anonymous journey</p>
-    //       </div>
-    //       <Form {...form}>
-    //         <form onSubmit={form.handleSubmit(onSubmit)} className="spance-y-6">
-    //           <FormField
-    //             name="identifier"
-    //             control={form.control}
-    //             render={({ field }) => (
-    //               <FormItem>
-    //                 <FormLabel>Email/Username</FormLabel>
-                    
-    //                   <Input  {...field} />
-                    
-    //                 <FormMessage />
-    //               </FormItem>
-    //             )}
-    //           />
-    //           <FormField
-    //             name="password"
-    //             control={form.control}
-    //             render={({ field }) => (
-    //               <FormItem>
-    //                 <FormLabel>Password</FormLabel>
-                    
-    //                   <Input
-    //                     type="password"
-    //                     placeholder="password"
-    //                     {...field}
-    //                   />
-                    
-    //                 <FormMessage />
-    //               </FormItem>
-    //             )}
-    //           />
-    //           <Button className='w-full' type="submit">
-    //             Signin
-    //           </Button>
-    //         </form>
-    //       </Form>
-    //       <div className="text-center mt-4">
-    //         <p>
-    //         Not a member yet ?{' '}
-    //           <Link
-    //             href="/signup"
-    //             className="text-blue-600 hover:text-blue-800"
-    //           >
-    //             Sign up
-    //           </Link>
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // );
+   
     return (
       <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 px-4">
         <div className="w-full max-w-md p-10 space-y-8 bg-white rounded-3xl border border-indigo-200 shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:shadow-3xl">
